@@ -5,36 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisandro Arbilla</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header con foto de portada -->
     <header>
-        <h1>Hola, soy Lisandro</h1>
-        <p>👨‍💻 Investigador / Desarrollador</p>
-        <nav>
-            <a href="#about">Sobre mí</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
-        </nav>
+        <div class="header-content">
+            <img src="foto-perfil.jpg" alt="Lisandro Arbilla">
+            <h1>Lisandro Arbilla</h1>
+            <p>Investigador en Ciencias Oceánicas | Desarrollador</p>
+            <div class="social-buttons">
+                <a href="https://github.com/lisandroarbilla" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/lisandroarbilla" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:lisandro@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
+    <!-- Sección Sobre mí -->
+    <section id="about" class="card">
         <h2>Sobre mí</h2>
-        <p>Soy investigador en <strong>ciencias oceánicas</strong> y me gusta crear herramientas y visualizaciones para el análisis de datos.</p>
+        <p>Soy investigador en <strong>ciencias oceánicas</strong> y me apasiona crear herramientas y visualizaciones de datos. Me gusta trabajar con Python, GitHub y proyectos de ciencia abierta.</p>
     </section>
 
-    <section id="projects">
+    <!-- Sección Proyectos -->
+    <section id="projects" class="card">
         <h2>Proyectos</h2>
-        <ul>
-            <li><a href="#">Proyecto 1</a> – Breve descripción.</li>
-            <li><a href="#">Proyecto 2</a> – Breve descripción.</li>
-            <li><a href="#">Proyecto 3</a> – Breve descripción.</li>
-        </ul>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="#">Ver más</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="#">Ver más</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 3</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="#">Ver más</a>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
+    <!-- Sección Contacto -->
+    <section id="contact" class="card">
         <h2>Contacto</h2>
         <p>Email: <a href="mailto:lisandro@example.com">lisandro@example.com</a></p>
         <p>GitHub: <a href="https://github.com/lisandroarbilla" target="_blank">github.com/lisandroarbilla</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/lisandroarbilla" target="_blank">linkedin.com/in/lisandroarbilla</a></p>
     </section>
 
     <footer>
