@@ -1,40 +1,131 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisandro Arbilla</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Header con foto de portada -->
-    <header>
-        <div class="header-content">
-            <img src="foto-perfil.jpg" alt="Lisandro Arbilla">
-            <h1>Lisandro Arbilla</h1>
-            <p>Investigador en Ciencias Oceánicas | Desarrollador</p>
-            <div class="social-buttons">
-                <a href="https://github.com/lisandroarbilla" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/lisandroarbilla" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:lisandro@example.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-    </header>
+/* style.css */
 
-    <!-- Sección Sobre mí -->
-    <section id="about" class="card">
-        <h2>Sobre mí</h2>
-        <p>Soy investigador en <strong>ciencias oceánicas</strong> y me apasiona crear herramientas y visualizaciones de datos. Me gusta trabajar con Python, GitHub y proyectos de ciencia abierta.</p>
-    </section>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-    <!-- Sección Proyectos -->
-    <section id="projects" class="card">
-        <h2>Proyectos</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto.</p>
+body {
+    background-color: #f5f7fa;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0a3d62;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #fff;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Social buttons */
+.social-buttons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-buttons a:hover {
+    color: #ffdd59;
+}
+
+/* Cards for sections */
+.card {
+    background-color: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Section headings */
+section h2 {
+    color: #0a3d62;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #0a3d62;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* Projects grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project {
+    background-color: #f0f4f8;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+    color: #0a3d62;
+}
+
+.project p {
+    margin-bottom: 0.8rem;
+}
+
+.project a {
+    text-decoration: none;
+    color: #0a3d62;
+    font-weight: bold;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #0a3d62;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}                <p>Descripción breve del proyecto.</p>
                 <a href="#">Ver más</a>
             </div>
             <div class="project">
