@@ -67,13 +67,13 @@ Supervisors: Jean-Baptiste Sallée
 </p>
 
 <p>
-Collaborators: Hervé Claustre (LOV, Villefranche-sur-Mer),  
-Peter Landschützer (VLIZ, Oostende),  
+Collaborators: Peter Landschützer (VLIZ, Oostende),
+Hervé Claustre (LOV, Villefranche-sur-Mer),    
 Elaine McDonagh (NORCE, Bergen)
 </p>
 
 <p>
-Research focused on optimising observing strategies for the Southern Ocean carbon sink using autonomous float observations, observational products, and data-driven approaches.
+Research focused on optimising observing strategies for the Southern Ocean carbon sink by combining autonomous float and ship-based observations with synthesized data products.
 </p>
 
 
