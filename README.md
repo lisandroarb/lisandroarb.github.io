@@ -17,99 +17,170 @@
 <a href="#about">About</a>
 <a href="#experience">Experience</a>
 <a href="#education">Education</a>
-<a href="#skills">Skills</a>
-<a href="#conferences">Conferences</a>
 <a href="#publications">Publications</a>
+<a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
+
 <section id="about">
+
 <h2>About</h2>
 
 <p>
-I am a Chemical Oceanographer specialising in marine biogeochemistry, with a strong focus on the processes that regulate the global carbon cycle and the exchange of CO₂ between the ocean and the atmosphere. My research aims to improve our understanding of the mechanisms controlling ocean carbon uptake and variability, and how these processes interact with ocean sustainability and climate change.
+I am a Chemical Oceanographer specialising in marine biogeochemistry, with a strong focus on the processes that regulate the global carbon cycle and the exchange of CO₂ between the ocean and the atmosphere.
 </p>
 
 <p>
-My work particularly focuses on the Southern Ocean carbon sink, combining in-situ observations, observational synthesis products, and data-driven approaches to better constrain air–sea CO₂ fluxes and their variability.
+My research focuses on understanding the drivers of ocean carbon uptake and variability, particularly in the Southern Ocean and the Southwest Atlantic. I combine in-situ observations, observational synthesis products, and data-driven approaches to better constrain air–sea CO₂ fluxes and their variability.
 </p>
 
 <p>
-I am also interested in how observing systems can be optimised to more effectively monitor the ocean carbon cycle, especially in data-sparse regions such as the Southern Ocean. My research contributes to ongoing efforts to improve the design of ocean carbon observing networks and to support future observing system simulation experiments.
+I am also interested in the optimisation of ocean carbon observing systems and how new observing strategies can improve monitoring of the ocean carbon sink in data-sparse regions such as the Southern Ocean.
 </p>
 
 </section>
 
+
+
 <section id="experience">
+
 <h2>Experience</h2>
 
 <h3>Postdoctoral Researcher</h3>
-<p><strong>LOCEAN – Sorbonne Université / IPSL</strong></p>
-<p>Research on the Southern Ocean carbon sink and optimisation of observing systems for air–sea CO₂ fluxes.</p>
-<p>2024 – Present</p>
+<p>
+<strong>CONICET – Argentina</strong><br>
+Supervisors: Dr. Carla Berghoff and Dr. Celeste López-Abbate
+</p>
+
+<p>
+Research on the variability of the ocean carbon cycle and air–sea CO₂ exchange, with a focus on Southern Ocean carbon dynamics and observational datasets.
+</p>
+
+<p>2025 – Present</p>
+
 
 <h3>PhD Researcher</h3>
-<p><strong>University / Institute</strong></p>
-<p>Research on ocean carbon cycle processes and air–sea CO₂ exchange.</p>
-<p>Year – Year</p>
+
+<p>
+<strong>Universidad de Buenos Aires (UBA)</strong><br>
+Supervisors: Dr. Laura Ruiz-Etcheverry, Dr. Celeste López-Abbate, Dr. Lucía C. Kahl
+</p>
+
+<p>
+PhD research on CO₂ dynamics and carbonate system variability in the Drake Passage and the Northern Antarctic Peninsula.
+</p>
+
+<p>2019 – 2025</p>
 
 </section>
+
+
 
 <section id="education">
+
 <h2>Education</h2>
 
-<h3>PhD in Oceanography / Marine Biogeochemistry</h3>
-<p>University Name</p>
+<h3>PhD in Atmosphere and Ocean Sciences</h3>
+<p>Universidad de Buenos Aires (UBA), Argentina</p>
+<p>2019 – 2025</p>
 
-<h3>MSc in Oceanography</h3>
-<p>University Name</p>
+<h3>Specialization in Environmental Engineering</h3>
+<p>Universidad Tecnológica Nacional (UTN), Argentina</p>
+<p>2023 – 2024</p>
 
-<h3>BSc in Oceanography</h3>
-<p>University Name</p>
+<h3>Licenciature in Oceanography (Marine Chemistry)</h3>
+<p>Universidad Nacional del Sur (UNS), Argentina</p>
+<p>2013 – 2018</p>
 
 </section>
 
+
+
+<section id="publications">
+
+<h2>Selected Publications</h2>
+
+<ul>
+
+<li>
+Arbilla, L. A., López-Abbate, M. C., Ruiz-Etcheverry, L. A., et al. (2025).  
+Regionally distinct drivers of the carbonate system dynamics in the Drake Passage and northern Antarctic Peninsula.  
+<strong>Journal of Marine Systems.</strong>
+</li>
+
+<li>
+Arbilla, L. A., Ruiz-Etcheverry, L. A., López-Abbate, M. C., Kahl, L. C. (2024).  
+CO₂ Sink and Source Zones Delimited by Marine Fronts in the Drake Passage.  
+<strong>Progress in Oceanography.</strong>
+</li>
+
+<li>
+Gilabert, A. S., López-Abbate, C., Flombaum, P., Unrein, F., Arbilla, L. A., et al. (2025).  
+Planktonic drivers of carbon transformation during different stages of the spring bloom at the Patagonian Shelf-break front.  
+<strong>Biogeochemistry.</strong>
+</li>
+
+<li>
+Kitch, G. D., Duke, P. J., Grabb, K. C., Simancas-Giraldo, S., Adekunbi, F. O., Addey, C. I., Arbilla, L. A., et al. (2025).  
+Early Career Recommendations for the equitable growth of a marine carbon dioxide removal sector.  
+<strong>Perspectives of Earth and Space Scientists.</strong>
+</li>
+
+</ul>
+
+</section>
+
+
+
 <section id="skills">
+
 <h2>Skills</h2>
 
 <ul>
-<li>Ocean carbon cycle and air–sea CO₂ exchange</li>
-<li>Southern Ocean biogeochemistry</li>
-<li>Large-scale ocean observational datasets (SOCAT, floats, satellite products)</li>
-<li>Machine learning and data-driven reconstructions</li>
+
+<li>Marine biogeochemistry and ocean carbon cycle</li>
+
+<li>Air–sea CO₂ exchange and carbonate system dynamics</li>
+
+<li>Southern Ocean and Southwest Atlantic oceanography</li>
+
+<li>Large observational datasets (SOCAT, underway pCO₂, satellite products)</li>
+
 <li>Python for scientific computing and data analysis</li>
-<li>Data visualisation and geospatial analysis</li>
+
+<li>Oceanographic data processing and quality control</li>
+
+<li>Scientific visualization and geospatial analysis</li>
+
 </ul>
 
 </section>
 
-<section id="conferences">
-<h2>Conferences</h2>
 
-<ul>
-<li>Conference Name – Year – Presentation title</li>
-<li>Conference Name – Year – Poster title</li>
-</ul>
-
-</section>
-
-<section id="publications">
-<h2>Publications</h2>
-
-<ul>
-<li>Arbilla, L. et al. (Year) Title of the paper. Journal.</li>
-</ul>
-
-</section>
 
 <section id="contact">
+
 <h2>Contact</h2>
 
 <p>Email: <a href="mailto:lisandro.arbilla@locean.ipsl.fr">lisandro.arbilla@locean.ipsl.fr</a></p>
-<p>GitHub: <a href="https://github.com/lisandroarbilla" target="_blank">github.com/lisandroarbilla</a></p>
+
+<p>GitHub:  
+<a href="https://github.com/lisandroarbilla" target="_blank">
+github.com/lisandroarbilla
+</a>
+</p>
+
+<p>ORCID:  
+<a href="https://orcid.org/0009-0006-4404-9756" target="_blank">
+0009-0006-4404-9756
+</a>
+</p>
 
 </section>
+
+
 
 <footer>
 <p>© 2026 Lisandro Arbilla</p>
