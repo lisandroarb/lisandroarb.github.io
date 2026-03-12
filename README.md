@@ -37,7 +37,7 @@ My research focuses on understanding the drivers of ocean carbon uptake and vari
 </p>
 
 <p>
-I am also interested in the optimisation of ocean carbon observing systems and how new observing strategies can improve monitoring of the ocean carbon sink in data-sparse regions such as the Southern Ocean.
+I am also interested in optimising ocean carbon observing systems and how new observing strategies can improve monitoring of the ocean carbon sink in data-sparse regions such as the Southern Ocean.
 </p>
 
 </section>
@@ -50,12 +50,41 @@ I am also interested in the optimisation of ocean carbon observing systems and h
 
 <h3>Postdoctoral Researcher</h3>
 <p>
+<strong>LOCEAN – Sorbonne Université / IPSL</strong><br>
+Paris, France
+</p>
+
+<p>
+Project: <strong>Optimizing Southern Ocean Carbon Sink Observations Using Autonomous Floats</strong> (2026–2028)
+</p>
+
+<p>
+European Project: <strong>TRICUSO</strong>
+</p>
+
+<p>
+Supervisors: Jean-Baptiste Sallée
+</p>
+
+<p>
+Collaborators: Hervé Claustre (LOV, Villefranche-sur-Mer),  
+Peter Landschützer (VLIZ, Oostende),  
+Elaine McDonagh (NORCE, Bergen)
+</p>
+
+<p>
+Research focused on optimising observing strategies for the Southern Ocean carbon sink using autonomous float observations, observational products, and data-driven approaches.
+</p>
+
+
+<h3>Postdoctoral Researcher</h3>
+<p>
 <strong>CONICET – Argentina</strong><br>
 Supervisors: Dr. Carla Berghoff and Dr. Celeste López-Abbate
 </p>
 
 <p>
-Research on the variability of the ocean carbon cycle and air–sea CO₂ exchange, with a focus on Southern Ocean carbon dynamics and observational datasets.
+Research on variability of the ocean carbon cycle and air–sea CO₂ exchange in the Southwest Atlantic.
 </p>
 
 <p>2025 – Present</p>
@@ -69,7 +98,7 @@ Supervisors: Dr. Laura Ruiz-Etcheverry, Dr. Celeste López-Abbate, Dr. Lucía C.
 </p>
 
 <p>
-PhD research on CO₂ dynamics and carbonate system variability in the Drake Passage and the Northern Antarctic Peninsula.
+PhD research on CO₂ dynamics and carbonate system variability in the Drake Passage and Northern Antarctic Peninsula.
 </p>
 
 <p>2019 – 2025</p>
@@ -90,7 +119,7 @@ PhD research on CO₂ dynamics and carbonate system variability in the Drake Pas
 <p>Universidad Tecnológica Nacional (UTN), Argentina</p>
 <p>2023 – 2024</p>
 
-<h3>Licenciature in Oceanography (Marine Chemistry)</h3>
+<h3>Licenciature in Oceanography (Marine Chemistry Orientation)</h3>
 <p>Universidad Nacional del Sur (UNS), Argentina</p>
 <p>2013 – 2018</p>
 
@@ -107,25 +136,25 @@ PhD research on CO₂ dynamics and carbonate system variability in the Drake Pas
 <li>
 Arbilla, L. A., López-Abbate, M. C., Ruiz-Etcheverry, L. A., et al. (2025).  
 Regionally distinct drivers of the carbonate system dynamics in the Drake Passage and northern Antarctic Peninsula.  
-<strong>Journal of Marine Systems.</strong>
+<strong>Journal of Marine Systems.</strong> <a href="https://doi.org/10.1016/j.jmarsys.2025.104070" target="_blank">DOI</a>
 </li>
 
 <li>
 Arbilla, L. A., Ruiz-Etcheverry, L. A., López-Abbate, M. C., Kahl, L. C. (2024).  
 CO₂ Sink and Source Zones Delimited by Marine Fronts in the Drake Passage.  
-<strong>Progress in Oceanography.</strong>
+<strong>Progress in Oceanography.</strong> <a href="https://doi.org/10.1016/j.pocean.2024.103246" target="_blank">DOI</a>
 </li>
 
 <li>
 Gilabert, A. S., López-Abbate, C., Flombaum, P., Unrein, F., Arbilla, L. A., et al. (2025).  
 Planktonic drivers of carbon transformation during different stages of the spring bloom at the Patagonian Shelf-break front.  
-<strong>Biogeochemistry.</strong>
+<strong>Biogeochemistry.</strong> <a href="https://doi.org/10.1007/s10533-024-01192-6" target="_blank">DOI</a>
 </li>
 
 <li>
 Kitch, G. D., Duke, P. J., Grabb, K. C., Simancas-Giraldo, S., Adekunbi, F. O., Addey, C. I., Arbilla, L. A., et al. (2025).  
 Early Career Recommendations for the equitable growth of a marine carbon dioxide removal sector.  
-<strong>Perspectives of Earth and Space Scientists.</strong>
+<strong>Perspectives of Earth and Space Scientists.</strong> <a href="https://doi.org/10.1029/2024CN000246" target="_blank">DOI</a>
 </li>
 
 </ul>
