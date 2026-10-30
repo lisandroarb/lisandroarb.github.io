@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lisandro Arbilla</title>
-<meta name="description" content="Lisandro Arbilla – Chemical oceanographer, postdoctoral researcher at LOCEAN (Sorbonne Université / IPSL). Ocean carbon cycle, air–sea CO₂ fluxes and Southern Ocean observing systems.">
+<meta name="description" content="Lisandro Arbilla – Chemical oceanographer, postdoctoral researcher at LOCEAN-CNRS. Ocean carbon cycle, air–sea CO₂ fluxes and Southern Ocean observing systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -80,6 +80,9 @@
   .pubs li{display:grid;grid-template-columns:3.5rem 1fr;gap:1rem;padding:1rem 0;border-top:1px solid var(--panel-line)}
   .pubs li:first-child{border-top:0;padding-top:0}
   .yr{font-family:Fraunces,Georgia,serif;font-weight:600;color:var(--accent);font-size:1.05rem}
+  .pubs li.same{border-top:1px dashed rgba(159,227,225,.07)}
+  .pubs li:not(.same):not(:first-child){border-top-color:rgba(159,227,225,.22);padding-top:1.4rem}
+  @media (max-width:760px){.pubs li.same .yr{display:none}}
   .pubs .t{display:block;font-weight:600;color:var(--head);line-height:1.45;margin-bottom:.25rem}
   .pubs .a{font-size:.93rem;color:var(--muted)}
   .pubs .a strong{color:var(--text)}
@@ -96,6 +99,20 @@
 
   footer{color:rgba(255,255,255,.45);font-size:.85rem;border-top:1px solid var(--panel-line)}
   footer .in{max-width:58rem;margin:0 auto;padding:1.75rem 1.5rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+  /* projects */
+  #projects{grid-template-columns:1fr;gap:1.25rem}
+  .intro{margin:0 0 1.5rem;font-size:1.02rem;max-width:44rem}
+  .projects{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .proj{background:rgba(255,255,255,.03);border:1px solid var(--panel-line);border-radius:1rem;padding:1.25rem 1.3rem;display:flex;flex-direction:column}
+  .proj .tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.7rem}
+  .proj .tag{font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:1rem;padding:.08rem .55rem}
+  .proj h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.12rem;line-height:1.3;margin:0 0 .3rem;color:var(--head)}
+  .proj .fund{font-size:.82rem;color:var(--muted);margin-bottom:.65rem}
+  .proj p{margin:0;font-size:.93rem;line-height:1.6}
+  .proj .role{margin-top:.75rem;padding-top:.65rem;border-top:1px solid var(--panel-line);font-size:.85rem;color:var(--muted)}
+  .proj .role strong{color:var(--text)}
+  @media (max-width:760px){.projects{grid-template-columns:1fr}}
 
   @media (max-width:760px){
     .topbar .in{padding:.75rem 1rem}
@@ -118,6 +135,7 @@
     <ul class="menu">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -127,10 +145,10 @@
 
 <div class="hero" id="top">
   <div class="in">
-    <div class="photo"><span>LA</span><img src="foto.jpg" alt="Lisandro Arbilla" onerror="this.remove()"></div>
+    <div class="photo"><span>LA</span><img src="foto.jpg" alt="Lisandro Arbilla" data-alt="foto.jpeg,foto.png,foto.JPG,foto.JPEG,foto.PNG" onerror="var l=this.dataset.alt.split(',');if(l[0]){this.dataset.alt=l.slice(1).join(',');this.src=l[0];}else{this.remove();}"></div>
     <div>
       <h1>Lisandro Arbilla</h1>
-      <p class="role"><strong>Chemical Oceanographer</strong> · Postdoctoral Researcher at LOCEAN, Sorbonne Université / IPSL, Paris</p>
+      <p class="role"><strong>Chemical Oceanographer</strong> · Postdoctoral Researcher at LOCEAN-CNRS, Paris, France</p>
       <div class="links">
         <a href="mailto:lisandro.arbilla@locean.ipsl.fr"><i class="fa-solid fa-envelope"></i>Email</a>
         <a href="https://orcid.org/0009-0006-4404-9756"><i class="fa-brands fa-orcid"></i>ORCID</a>
@@ -148,8 +166,8 @@
   <section id="about">
     <div class="label">About</div>
     <div class="prose">
-      <p>I am a chemical oceanographer specialising in marine biogeochemistry, with a strong focus on the processes that regulate the global carbon cycle and the exchange of CO₂ between the ocean and the atmosphere.</p>
-      <p>I am currently a postdoctoral researcher at LOCEAN (Sorbonne Université / IPSL) in Paris, within the European project TRICUSO. My work focuses on optimising the ocean CO₂ observing system in the Southern Ocean, combining the SOCAT database with autonomous BGC-Argo floats to better estimate the Southern Ocean carbon sink and reduce its uncertainties.</p>
+      <p>I am an Argentine chemical oceanographer specialising in marine biogeochemistry, with a strong focus on the processes that regulate the global carbon cycle and the exchange of CO₂ between the ocean and the atmosphere.</p>
+      <p>I am currently a postdoctoral researcher at LOCEAN-CNRS in Paris, France, within the European project TRICUSO. My work focuses on optimising the ocean CO₂ observing system in the Southern Ocean, combining the SOCAT database with autonomous BGC-Argo floats to better estimate the Southern Ocean carbon sink and reduce its uncertainties.</p>
       <p>In parallel, I continue collecting and working with surface ocean pCO₂ data from the Argentine continental shelf, through the underway system on board R/V <em>Víctor Angelescu</em> (INIDEP). I process and quality-control these observations, submit them to SOCAT, and use them to study air–sea CO₂ fluxes in the Southwest Atlantic.</p>
       <p>Before that, during my PhD, I studied the drivers of air–sea CO₂ fluxes and carbonate system variability in the Drake Passage and the northern Antarctic Peninsula.</p>
     </div>
@@ -162,9 +180,9 @@
       <li class="now">
         <div class="when">2025 – Present</div>
         <h3>Postdoctoral Researcher</h3>
-        <div class="where">LOCEAN – Sorbonne Université / IPSL · Paris, France</div>
+        <div class="where">LOCEAN-CNRS · Paris, France</div>
         <p>Optimising Southern Ocean carbon sink observations using autonomous floats (Horizon Europe project TRICUSO).</p>
-        <p class="meta"><strong>Supervisor:</strong> Dr. Jean-Baptiste Sallée · <strong>Collaborators:</strong> Peter Landschützer (VLIZ), Hervé Claustre (LOV), Elaine McDonagh (NORCE)</p>
+        <p class="meta"><strong>Supervisor:</strong> Dr. Jean-Baptiste Sallée</p>
       </li>
       <li>
         <div class="when">2025 – 2026</div>
@@ -183,6 +201,49 @@
     </ul>
   </section>
 
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="label">Projects</div>
+    <div>
+      <p class="intro">My work spans from the open Southern Ocean to the Argentine continental shelf and coastal estuaries, including the scientific baselines needed for marine carbon dioxide removal (mCDR). These are the projects I am currently involved in.</p>
+      <div class="projects">
+
+        <article class="proj">
+          <div class="tags"><span class="tag">Southern Ocean</span><span class="tag">Observing systems</span></div>
+          <h3>TRICUSO – Three Research Infrastructures together: Carbon Uptake Southern Ocean</h3>
+          <div class="fund">Horizon Europe (Grant No. 101188028) · 2025 – 2028</div>
+          <p>A large European effort to better quantify how much carbon the Southern Ocean absorbs, combining ship-based observations, autonomous floats and data products.</p>
+          <div class="role"><strong>My role:</strong> postdoctoral researcher in WP3 (Observing system design and strategy, led by VLIZ) and WP5 (Optimisation of the Southern Ocean carbon observing system, led by NORCE).</div>
+        </article>
+
+        <article class="proj">
+          <div class="tags"><span class="tag">mCDR</span><span class="tag">Southwest Atlantic</span></div>
+          <h3>Establishing baseline conditions for responsible mCDR deployment in the Argentine Southwestern Atlantic</h3>
+          <div class="fund">ClimateWorks Foundation · 2026 – 2028</div>
+          <p>Builds the observational baseline of the carbonate system and air–sea CO₂ exchange needed before marine carbon dioxide removal can be evaluated responsibly in Argentine waters.</p>
+          <div class="role"><strong>PI:</strong> Dr. Carla F. Berghoff (INIDEP)</div>
+        </article>
+
+        <article class="proj">
+          <div class="tags"><span class="tag">Continental shelf</span><span class="tag">Carbon cycle</span></div>
+          <h3>Carbon uptake mechanisms and fate on the northern Argentine continental shelf</h3>
+          <div class="fund">CONICET PIP 11220250101386CO</div>
+          <p>Investigates the processes that drive CO₂ uptake on the northern Argentine shelf and what happens to that carbon once it enters the ocean.</p>
+          <div class="role"><strong>PI:</strong> Dr. Celeste López-Abbate (IADO)</div>
+        </article>
+
+        <article class="proj">
+          <div class="tags"><span class="tag">Estuary</span><span class="tag">Blue carbon</span></div>
+          <h3>Smart-Port Net-Zero Challenge: natural decarbonisation potential of the Bahía Blanca Estuary</h3>
+          <div class="fund">Port of Bahía Blanca · 2023 – Present</div>
+          <p>Sustained carbonate-system monitoring, at a fixed point and from satellite, to map CO₂ sink and source areas in the estuary and guide nature-based negative-emission tools. Outputs include pCO₂ sensor calibration, in-house chemical standards, a satellite pCO₂ algorithm for coastal waters and an open data portal.</p>
+          <div class="role"><strong>PIs:</strong> Dr. Celeste López-Abbate, Dr. Ana L. Delgado (IADO)</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ================= EDUCATION ================= -->
   <section id="education">
     <div class="label">Education</div>
@@ -191,7 +252,6 @@
         <div class="when">2019 – 2025</div>
         <h3>PhD in Atmosphere and Ocean Sciences</h3>
         <div class="where">Universidad de Buenos Aires (UBA), Argentina</div>
-        <p class="meta"><strong>Thesis:</strong> <em>Dinámica del CO₂ en el Pasaje de Drake</em> (CO₂ dynamics in the Drake Passage)</p>
       </li>
       <li>
         <div class="when">2023 – 2024</div>
@@ -200,8 +260,8 @@
       </li>
       <li>
         <div class="when">2013 – 2018</div>
-        <h3>Licentiate in Oceanography</h3>
-        <div class="where">Universidad Nacional del Sur (UNS), Argentina · Marine Chemistry orientation</div>
+        <h3>BSc in Oceanography</h3>
+        <div class="where">Universidad Nacional del Sur (UNS), Argentina · 5-year degree (Licenciatura), Marine Chemistry orientation</div>
       </li>
     </ul>
   </section>
@@ -217,7 +277,7 @@
           <span class="a">Álvarez, M., García-Ibáñez, M. I., Acerbi, R., Santiago-Domenech, R., Guallart, E. F., Fajar, N. M., <strong>Arbilla, L. A.</strong> · <span class="j">Limnology and Oceanography: Methods</span>, 24, e70023</span>
           <a class="doi" href="https://doi.org/10.1002/lom3.70023">DOI</a>
         </div></li>
-        <li><span class="yr">2026</span><div>
+        <li class="same"><span class="yr"></span><div>
           <span class="t">Insight into origin and transformation of dissolved organic matter under contrasting nutrient conditions on the Northern Patagonian Continental Shelf, Southwestern Atlantic Ocean</span>
           <span class="a">Garzón-Cardona, J. E., Martínez, A. M., Alonso, C., Palma, E. D., González, M. B., Barrera, F. M., <strong>Arbilla, L. A.</strong>, et al. · <span class="j">Marine Environmental Research</span>, 213, 107660</span>
           <a class="doi" href="https://doi.org/10.1016/j.marenvres.2025.107660">DOI</a>
@@ -227,12 +287,12 @@
           <span class="a"><strong>Arbilla, L. A.</strong>, López-Abbate, M. C., Ruiz-Etcheverry, L. A., Gilabert, A. S., Kahl, L. C., Osiroff, A. P. · <span class="j">Journal of Marine Systems</span>, 249, 104070</span>
           <a class="doi" href="https://doi.org/10.1016/j.jmarsys.2025.104070">DOI</a>
         </div></li>
-        <li><span class="yr">2025</span><div>
+        <li class="same"><span class="yr"></span><div>
           <span class="t">Early career recommendations for the equitable growth of a marine carbon dioxide removal sector</span>
           <span class="a">Kitch, G. D., Duke, P. J., Grabb, K. C., Simancas-Giraldo, S., Adekunbi, F. O., Addey, C. I., <strong>Arbilla, L. A.</strong>, et al. · <span class="j">Perspectives of Earth and Space Scientists</span>, 6, e2024CN000246</span>
           <a class="doi" href="https://doi.org/10.1029/2024CN000246">DOI</a>
         </div></li>
-        <li><span class="yr">2025</span><div>
+        <li class="same"><span class="yr"></span><div>
           <span class="t">Planktonic drivers of carbon transformation during different stages of the spring bloom at the Patagonian Shelf-break front, Southwestern Atlantic Ocean</span>
           <span class="a">Gilabert, A. S., López-Abbate, M. C., Flombaum, P., Unrein, F., <strong>Arbilla, L. A.</strong>, et al. · <span class="j">Biogeochemistry</span>, 168, 10</span>
           <a class="doi" href="https://doi.org/10.1007/s10533-024-01192-6">DOI</a>
@@ -258,6 +318,21 @@
           <span class="status">In review</span>
         </div></li>
       </ol>
+      <h3 class="sub next">Theses</h3>
+      <ol class="pubs">
+        <li><span class="yr">2025</span><div>
+          <span class="t">Dinámica del CO₂ en el Pasaje de Drake <span style="font-weight:400;color:var(--muted)">(CO₂ dynamics in the Drake Passage)</span></span>
+          <span class="a">PhD thesis · Universidad de Buenos Aires, Argentina · Supervisors: Dr. Laura A. Ruiz-Etcheverry, Dr. Celeste López-Abbate · Co-supervisor: Dr. Lucía C. Kahl</span>
+        </div></li>
+        <li><span class="yr">2024</span><div>
+          <span class="t">Captura de CO₂ oceánico y el rol de Argentina <span style="font-weight:400;color:var(--muted)">(Ocean CO₂ uptake and the role of Argentina)</span></span>
+          <span class="a">Specialisation final project · Universidad Tecnológica Nacional, Argentina · Supervisor: Dr. Carla F. Berghoff</span>
+        </div></li>
+        <li><span class="yr">2018</span><div>
+          <span class="t">Trazadores ópticos de materia orgánica disuelta en la zona de El Rincón-Talud <span style="font-weight:400;color:var(--muted)">(Optical tracers of dissolved organic matter in the El Rincón–shelf-break area)</span></span>
+          <span class="a">BSc thesis · Universidad Nacional del Sur, Argentina · Supervisors: Dr. Ana M. Martínez, Dr. John E. Garzón-Cardona</span>
+        </div></li>
+      </ol>
     </div>
   </section>
 
@@ -266,7 +341,7 @@
     <div class="label">Contact</div>
     <ul class="contact">
       <li><i class="fa-solid fa-envelope"></i><a href="mailto:lisandro.arbilla@locean.ipsl.fr">lisandro.arbilla@locean.ipsl.fr</a></li>
-      <li><i class="fa-solid fa-location-dot"></i>LOCEAN – Sorbonne Université, 4 place Jussieu, Paris, France</li>
+      <li><i class="fa-solid fa-location-dot"></i>LOCEAN-CNRS, Paris, France</li>
       <li><i class="fa-brands fa-orcid"></i><a href="https://orcid.org/0009-0006-4404-9756">0009-0006-4404-9756</a></li>
     </ul>
   </section>
