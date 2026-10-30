@@ -1,156 +1,284 @@
-/* style.css */
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lisandro Arbilla</title>
+<meta name="description" content="Lisandro Arbilla – Chemical oceanographer, postdoctoral researcher at LOCEAN (Sorbonne Université / IPSL). Ocean carbon cycle, air–sea CO₂ fluxes and Southern Ocean observing systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  :root{
+    --deep:#061a26;
+    --ocean:#0b2f42;
+    --panel:rgba(255,255,255,.035);
+    --panel-line:rgba(159,227,225,.12);
+    --accent:#4fd1c5;
+    --accent-soft:rgba(79,209,197,.14);
+    --head:#ffffff;
+    --text:#d3e2e8;
+    --muted:#8ea8b3;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:4.5rem;background:var(--deep)}
+  body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--text);line-height:1.7;font-size:1rem;
+    background:linear-gradient(180deg,#0f4560 0%,var(--ocean) 22rem,#08263a 55%,var(--deep) 100%);min-height:100vh}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
 
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
+  .topbar{position:sticky;top:0;z-index:20;background:rgba(6,26,38,.75);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--panel-line)}
+  .topbar .in{max-width:58rem;margin:0 auto;padding:.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+  .brand{font-family:Fraunces,Georgia,serif;font-weight:600;color:#fff;font-size:1.1rem;white-space:nowrap}
+  .brand:hover{text-decoration:none}
+  .menu{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0;overflow-x:auto}
+  .menu a{color:rgba(255,255,255,.65);font-size:.9rem;font-weight:500;white-space:nowrap}
+  .menu a:hover{color:var(--accent);text-decoration:none}
 
-body {
-    background-color: #f5f7fa;
-    color: #1a1a1a;
-    line-height: 1.6;
-}
+  .hero{position:relative;color:#fff}
+  .hero .in{max-width:58rem;margin:0 auto;padding:5rem 1.5rem 4rem;
+    display:grid;grid-template-columns:auto 1fr;gap:2.75rem;align-items:center}
+  .photo{width:11rem;height:11rem;border-radius:50%;overflow:hidden;position:relative;flex-shrink:0;
+    box-shadow:0 0 0 .4rem rgba(79,209,197,.28),0 0 60px rgba(79,209,197,.18);background:var(--accent);color:var(--deep);
+    display:flex;align-items:center;justify-content:center;font-family:Fraunces,serif;font-size:3rem}
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(2.6rem,6vw,4rem);line-height:1.05;margin:0;letter-spacing:-.01em}
+  .hero .role{margin:.7rem 0 0;font-size:1.1rem;color:rgba(255,255,255,.8)}
+  .hero .role strong{color:var(--accent);font-weight:600}
+  .links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+  .links a{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .9rem;border-radius:2rem;
+    border:1px solid rgba(255,255,255,.22);color:#fff;font-size:.88rem;font-weight:500;transition:background .2s,border-color .2s}
+  .links a:hover{background:var(--accent-soft);border-color:var(--accent);text-decoration:none}
+  .updated{margin-top:1.25rem;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45)}
 
-/* Header */
-header {
-    background-color: #0a3d62;
-    color: #fff;
-    text-align: center;
-    padding: 3rem 1rem 2rem;
-}
+  .wrap{max-width:58rem;margin:0 auto;padding:0 1.5rem 3rem}
+  section{display:grid;grid-template-columns:10rem 1fr;gap:2.5rem;padding:2.5rem 2.25rem;margin-bottom:1.5rem;
+    background:var(--panel);border:1px solid var(--panel-line);border-radius:1.25rem}
+  .label{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding-top:.35rem}
+  .label::after{content:"";display:block;width:2rem;height:2px;background:var(--accent);margin-top:.7rem;opacity:.7}
+  .prose p{margin:0 0 1.1rem;font-size:1.04rem}
+  .prose p:last-child{margin-bottom:0}
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 3px solid #fff;
-}
+  .tl{list-style:none;margin:0;padding:0;position:relative}
+  .tl::before{content:"";position:absolute;left:.35rem;top:.6rem;bottom:.6rem;width:2px;background:var(--panel-line)}
+  .tl li{position:relative;padding-left:2rem;margin-bottom:2.1rem}
+  .tl li:last-child{margin-bottom:0}
+  .tl li::before{content:"";position:absolute;left:0;top:.45rem;width:.8rem;height:.8rem;border-radius:50%;
+    background:var(--deep);border:2px solid var(--accent)}
+  .tl li.now::before{background:var(--accent);box-shadow:0 0 12px var(--accent)}
+  .when{font-size:.85rem;font-weight:600;color:var(--accent)}
+  .tl h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.3rem;line-height:1.3;margin:.1rem 0 .15rem;color:var(--head)}
+  .where{color:var(--muted);font-size:.95rem}
+  .tl p{margin:.5rem 0 0}
+  .tl .meta{font-size:.92rem;color:var(--muted)}
+  .tl .meta strong{color:var(--text);font-weight:600}
 
-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.3rem;
-}
+  .sub{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.15rem;color:var(--head);margin:0 0 1.2rem}
+  .sub.next{margin-top:2.5rem}
+  .pubs{list-style:none;margin:0;padding:0}
+  .pubs li{display:grid;grid-template-columns:3.5rem 1fr;gap:1rem;padding:1rem 0;border-top:1px solid var(--panel-line)}
+  .pubs li:first-child{border-top:0;padding-top:0}
+  .yr{font-family:Fraunces,Georgia,serif;font-weight:600;color:var(--accent);font-size:1.05rem}
+  .pubs .t{display:block;font-weight:600;color:var(--head);line-height:1.45;margin-bottom:.25rem}
+  .pubs .a{font-size:.93rem;color:var(--muted)}
+  .pubs .a strong{color:var(--text)}
+  .pubs .j{font-style:italic}
+  .doi{display:inline-block;margin-left:.35rem;font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+    padding:.05rem .55rem;border-radius:1rem;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+  .doi:hover{background:var(--accent);color:var(--deep);text-decoration:none}
+  .status{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#f3c77a;
+    border:1px solid rgba(243,199,122,.35);border-radius:1rem;padding:0 .55rem;margin-left:.35rem}
 
-header p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
+  .contact{list-style:none;margin:0;padding:0;display:grid;gap:.85rem}
+  .contact li{display:flex;align-items:center;gap:.9rem}
+  .contact i{width:1.2rem;text-align:center;color:var(--accent)}
 
-/* Social buttons */
-.social-buttons a {
-    color: #fff;
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
+  footer{color:rgba(255,255,255,.45);font-size:.85rem;border-top:1px solid var(--panel-line)}
+  footer .in{max-width:58rem;margin:0 auto;padding:1.75rem 1.5rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 
-.social-buttons a:hover {
-    color: #ffdd59;
-}
+  @media (max-width:760px){
+    .topbar .in{padding:.75rem 1rem}
+    .brand{display:none}
+    .menu{gap:1.2rem}
+    .hero .in{grid-template-columns:1fr;text-align:center;padding:3rem 1rem 2.5rem;gap:1.5rem;justify-items:center}
+    .photo{width:8.5rem;height:8.5rem}
+    .links{justify-content:center}
+    .wrap{padding:0 .75rem 2rem}
+    section{grid-template-columns:1fr;gap:1.1rem;padding:1.75rem 1.25rem;margin-bottom:1rem}
+    .pubs li{grid-template-columns:1fr;gap:.2rem}
+  }
+</style>
+</head>
+<body>
 
-/* Cards for sections */
-.card {
-    background-color: #fff;
-    margin: 2rem auto;
-    padding: 2rem;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="#top">Lisandro Arbilla</a>
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-/* Section headings */
-section h2 {
-    color: #0a3d62;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #0a3d62;
-    display: inline-block;
-    padding-bottom: 0.3rem;
-}
+<div class="hero" id="top">
+  <div class="in">
+    <div class="photo"><span>LA</span><img src="foto.jpg" alt="Lisandro Arbilla" onerror="this.remove()"></div>
+    <div>
+      <h1>Lisandro Arbilla</h1>
+      <p class="role"><strong>Chemical Oceanographer</strong> · Postdoctoral Researcher at LOCEAN, Sorbonne Université / IPSL, Paris</p>
+      <div class="links">
+        <a href="mailto:lisandro.arbilla@locean.ipsl.fr"><i class="fa-solid fa-envelope"></i>Email</a>
+        <a href="https://orcid.org/0009-0006-4404-9756"><i class="fa-brands fa-orcid"></i>ORCID</a>
+        <a href="https://www.linkedin.com/in/lisandroarbilla"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+        <a href="https://github.com/lisandroarb"><i class="fa-brands fa-github"></i>GitHub</a>
+      </div>
+      <div class="updated">Last updated: October 2026</div>
+    </div>
+  </div>
+</div>
 
-/* Projects grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
+<main class="wrap">
 
-.project {
-    background-color: #f0f4f8;
-    padding: 1rem;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="label">About</div>
+    <div class="prose">
+      <p>I am a chemical oceanographer specialising in marine biogeochemistry, with a strong focus on the processes that regulate the global carbon cycle and the exchange of CO₂ between the ocean and the atmosphere.</p>
+      <p>I am currently a postdoctoral researcher at LOCEAN (Sorbonne Université / IPSL) in Paris, within the European project TRICUSO. My work focuses on optimising the ocean CO₂ observing system in the Southern Ocean, combining the SOCAT database with autonomous BGC-Argo floats to better estimate the Southern Ocean carbon sink and reduce its uncertainties.</p>
+      <p>In parallel, I continue collecting and working with surface ocean pCO₂ data from the Argentine continental shelf, through the underway system on board R/V <em>Víctor Angelescu</em> (INIDEP). I process and quality-control these observations, submit them to SOCAT, and use them to study air–sea CO₂ fluxes in the Southwest Atlantic.</p>
+      <p>Before that, during my PhD, I studied the drivers of air–sea CO₂ fluxes and carbonate system variability in the Drake Passage and the northern Antarctic Peninsula.</p>
+    </div>
+  </section>
 
-.project h3 {
-    margin-bottom: 0.5rem;
-    color: #0a3d62;
-}
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience">
+    <div class="label">Experience</div>
+    <ul class="tl">
+      <li class="now">
+        <div class="when">2025 – Present</div>
+        <h3>Postdoctoral Researcher</h3>
+        <div class="where">LOCEAN – Sorbonne Université / IPSL · Paris, France</div>
+        <p>Optimising Southern Ocean carbon sink observations using autonomous floats (Horizon Europe project TRICUSO).</p>
+        <p class="meta"><strong>Supervisor:</strong> Dr. Jean-Baptiste Sallée · <strong>Collaborators:</strong> Peter Landschützer (VLIZ), Hervé Claustre (LOV), Elaine McDonagh (NORCE)</p>
+      </li>
+      <li>
+        <div class="when">2025 – 2026</div>
+        <h3>CONICET Postdoctoral Fellow</h3>
+        <div class="where">Instituto Argentino de Oceanografía (IADO-CONICET-UNS) · Bahía Blanca, Argentina</div>
+        <p>Spatial and temporal variability of air–sea CO₂ exchange in the Argentine Southwest Atlantic.</p>
+        <p class="meta"><strong>Supervisors:</strong> Dr. Carla F. Berghoff, Dr. Celeste López-Abbate</p>
+      </li>
+      <li>
+        <div class="when">2019 – 2025</div>
+        <h3>CONICET Doctoral Fellow</h3>
+        <div class="where">IADO-CONICET-UNS / Universidad de Buenos Aires · Argentina</div>
+        <p>CO₂ dynamics and carbonate system variability in the Drake Passage and northern Antarctic Peninsula.</p>
+        <p class="meta"><strong>Supervisors:</strong> Dr. Laura Ruiz-Etcheverry, Dr. Celeste López-Abbate, Dr. Lucía C. Kahl</p>
+      </li>
+    </ul>
+  </section>
 
-.project p {
-    margin-bottom: 0.8rem;
-}
+  <!-- ================= EDUCATION ================= -->
+  <section id="education">
+    <div class="label">Education</div>
+    <ul class="tl">
+      <li>
+        <div class="when">2019 – 2025</div>
+        <h3>PhD in Atmosphere and Ocean Sciences</h3>
+        <div class="where">Universidad de Buenos Aires (UBA), Argentina</div>
+        <p class="meta"><strong>Thesis:</strong> <em>Dinámica del CO₂ en el Pasaje de Drake</em> (CO₂ dynamics in the Drake Passage)</p>
+      </li>
+      <li>
+        <div class="when">2023 – 2024</div>
+        <h3>Specialisation in Environmental Engineering</h3>
+        <div class="where">Universidad Tecnológica Nacional (UTN), Argentina</div>
+      </li>
+      <li>
+        <div class="when">2013 – 2018</div>
+        <h3>Licentiate in Oceanography</h3>
+        <div class="where">Universidad Nacional del Sur (UNS), Argentina · Marine Chemistry orientation</div>
+      </li>
+    </ul>
+  </section>
 
-.project a {
-    text-decoration: none;
-    color: #0a3d62;
-    font-weight: bold;
-}
+  <!-- ================= PUBLICATIONS ================= -->
+  <section id="publications">
+    <div class="label">Publications</div>
+    <div>
+      <h3 class="sub">Peer-reviewed articles</h3>
+      <ol class="pubs">
+        <li><span class="yr">2026</span><div>
+          <span class="t">Ocean acidification at the crossroads I: Harmonizing unpurified and purified meta-cresol purple spectrophotometric pH<sub>T</sub> measurements based on absorbance data</span>
+          <span class="a">Álvarez, M., García-Ibáñez, M. I., Acerbi, R., Santiago-Domenech, R., Guallart, E. F., Fajar, N. M., <strong>Arbilla, L. A.</strong> · <span class="j">Limnology and Oceanography: Methods</span>, 24, e70023</span>
+          <a class="doi" href="https://doi.org/10.1002/lom3.70023">DOI</a>
+        </div></li>
+        <li><span class="yr">2026</span><div>
+          <span class="t">Insight into origin and transformation of dissolved organic matter under contrasting nutrient conditions on the Northern Patagonian Continental Shelf, Southwestern Atlantic Ocean</span>
+          <span class="a">Garzón-Cardona, J. E., Martínez, A. M., Alonso, C., Palma, E. D., González, M. B., Barrera, F. M., <strong>Arbilla, L. A.</strong>, et al. · <span class="j">Marine Environmental Research</span>, 213, 107660</span>
+          <a class="doi" href="https://doi.org/10.1016/j.marenvres.2025.107660">DOI</a>
+        </div></li>
+        <li><span class="yr">2025</span><div>
+          <span class="t">Regionally distinct drivers of the carbonate system dynamics in the Drake Passage and northern Antarctic Peninsula</span>
+          <span class="a"><strong>Arbilla, L. A.</strong>, López-Abbate, M. C., Ruiz-Etcheverry, L. A., Gilabert, A. S., Kahl, L. C., Osiroff, A. P. · <span class="j">Journal of Marine Systems</span>, 249, 104070</span>
+          <a class="doi" href="https://doi.org/10.1016/j.jmarsys.2025.104070">DOI</a>
+        </div></li>
+        <li><span class="yr">2025</span><div>
+          <span class="t">Early career recommendations for the equitable growth of a marine carbon dioxide removal sector</span>
+          <span class="a">Kitch, G. D., Duke, P. J., Grabb, K. C., Simancas-Giraldo, S., Adekunbi, F. O., Addey, C. I., <strong>Arbilla, L. A.</strong>, et al. · <span class="j">Perspectives of Earth and Space Scientists</span>, 6, e2024CN000246</span>
+          <a class="doi" href="https://doi.org/10.1029/2024CN000246">DOI</a>
+        </div></li>
+        <li><span class="yr">2025</span><div>
+          <span class="t">Planktonic drivers of carbon transformation during different stages of the spring bloom at the Patagonian Shelf-break front, Southwestern Atlantic Ocean</span>
+          <span class="a">Gilabert, A. S., López-Abbate, M. C., Flombaum, P., Unrein, F., <strong>Arbilla, L. A.</strong>, et al. · <span class="j">Biogeochemistry</span>, 168, 10</span>
+          <a class="doi" href="https://doi.org/10.1007/s10533-024-01192-6">DOI</a>
+        </div></li>
+        <li><span class="yr">2024</span><div>
+          <span class="t">CO₂ sink and source zones delimited by marine fronts in the Drake Passage</span>
+          <span class="a"><strong>Arbilla, L. A.</strong>, Ruiz-Etcheverry, L. A., López-Abbate, M. C., Kahl, L. C. · <span class="j">Progress in Oceanography</span>, 223, 103246</span>
+          <a class="doi" href="https://doi.org/10.1016/j.pocean.2024.103246">DOI</a>
+        </div></li>
+      </ol>
 
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
+      <h3 class="sub next">Submitted manuscripts</h3>
+      <ol class="pubs">
+        <li><span class="yr">—</span><div>
+          <span class="t">The Southern Ocean CO₂ sink in an evolving observing system</span>
+          <span class="a">Delaigue, L., Landschützer, P., Wimart-Rousseau, C., <strong>Arbilla, L. A.</strong>, Sallée, J.-B., et al. · <span class="j">Global Biogeochemical Cycles</span></span>
+          <span class="status">In review</span>
+          <a class="doi" href="https://doi.org/10.22541/essoar.15002449/v1">Preprint</a>
+        </div></li>
+        <li><span class="yr">—</span><div>
+          <span class="t">Physical-biological interactions create heterogeneous sea-air CO₂ fluxes on the northern Patagonian Shelf during the low-productivity season</span>
+          <span class="a">Gilabert, A. S., López-Abbate, M. C., <strong>Arbilla, L. A.</strong>, et al. · <span class="j">Limnology and Oceanography</span></span>
+          <span class="status">In review</span>
+        </div></li>
+      </ol>
+    </div>
+  </section>
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #0a3d62;
-    color: #fff;
-    margin-top: 2rem;
-}
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="label">Contact</div>
+    <ul class="contact">
+      <li><i class="fa-solid fa-envelope"></i><a href="mailto:lisandro.arbilla@locean.ipsl.fr">lisandro.arbilla@locean.ipsl.fr</a></li>
+      <li><i class="fa-solid fa-location-dot"></i>LOCEAN – Sorbonne Université, 4 place Jussieu, Paris, France</li>
+      <li><i class="fa-brands fa-orcid"></i><a href="https://orcid.org/0009-0006-4404-9756">0009-0006-4404-9756</a></li>
+    </ul>
+  </section>
 
-/* Responsive adjustments */
-@media(max-width: 600px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
+</main>
 
-    header p {
-        font-size: 1rem;
-    }
-}                <p>Descripción breve del proyecto.</p>
-                <a href="#">Ver más</a>
-            </div>
-            <div class="project">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto.</p>
-                <a href="#">Ver más</a>
-            </div>
-            <div class="project">
-                <h3>Proyecto 3</h3>
-                <p>Descripción breve del proyecto.</p>
-                <a href="#">Ver más</a>
-            </div>
-        </div>
-    </section>
+<footer>
+  <div class="in">
+    <span>© 2026 Lisandro Arbilla</span>
+    <span>Last updated: October 2026</span>
+  </div>
+</footer>
 
-    <!-- Sección Contacto -->
-    <section id="contact" class="card">
-        <h2>Contacto</h2>
-        <p>Email: <a href="mailto:lisandro@example.com">lisandro@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/lisandroarbilla" target="_blank">github.com/lisandroarbilla</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/lisandroarbilla" target="_blank">linkedin.com/in/lisandroarbilla</a></p>
-    </section>
-
-    <footer>
-        <p>© 2026 Lisandro Arbilla</p>
-    </footer>
 </body>
 </html>
